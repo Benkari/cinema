@@ -8,7 +8,6 @@ export const RightBarWrapper = styled(Box)(({ theme }) => ({
 }));
 
 export const RightBarTopUser = styled(Box)(({ theme }) => ({
-  width: "100%",
   display: "flex",
   flexDirection: "row",
   alignItems: "center",

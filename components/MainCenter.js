@@ -10,30 +10,22 @@ import DarkShadow from "./DarkShadow/DarkShadow";
 import Scrollable from "./Scrollable/Scrollable";
 import RightDrawer from "./RightDrawer/RightDrawer";
 
-export const RightDrawerWrapper = styled.div`
-  display: none;
-  @media (max-width: 1080px) {
-    display: block;
-  }
-`;
-
 function MainCenter({ trending, search }) {
   const searchListRef = React.useRef();
   const trendingListRef = React.useRef();
 
   return (
-    <div
-      className="main_center_body"
-      style={{
-        display: "flex",
-        height: "100vh",
-        flexDirection: "column",
-        gap: 10,
-        backgroundColor: "#0b0809",
-        overflow: "auto",
-      }}
-    >
-      <HeaderCenter />
+    <MainWrapper>
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          backgroundColor: "#0b0809",
+          zIndex: 999,
+        }}
+      >
+        <HeaderCenter />
+      </div>
       <div style={{ marginBottom: 20 }}>
         <div
           style={{
@@ -80,7 +72,6 @@ function MainCenter({ trending, search }) {
           style={{
             display: "flex",
             flexDirection: "row",
-            width: "100%",
             justifyContent: "space-between",
             padding: 10,
             alignItems: "center",
@@ -117,7 +108,6 @@ function MainCenter({ trending, search }) {
           style={{
             display: "flex",
             flexDirection: "row",
-            width: "100%",
             justifyContent: "space-between",
             padding: 10,
             alignItems: "center",
@@ -143,8 +133,23 @@ function MainCenter({ trending, search }) {
         </div>
         <ContinueList />
       </div>
-    </div>
+    </MainWrapper>
   );
 }
+
+export const MainWrapper = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 10;
+  background-color: #0b0809;
+`;
+
+export const RightDrawerWrapper = styled.div`
+  display: none;
+  @media (max-width: 1080px) {
+    display: block;
+  }
+`;
 
 export default MainCenter;

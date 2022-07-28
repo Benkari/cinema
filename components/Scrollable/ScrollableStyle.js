@@ -15,7 +15,7 @@ export const LeftArrow = styled.div`
   opacity: 0;
   top: 0;
   left: 0;
-  z-index: 99999;
+  z-index: 99;
   display: flex;
   justifycontent: center;
   align-items: center;
@@ -34,7 +34,7 @@ export const RightArrow = styled.div`
   opacity: 0;
   top: 0;
   right: 0;
-  z-index: 99999;
+  z-index: 99;
   display: flex;
   justifycontent: center;
   align-items: center;

@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 
 export const HeaderCenterWrapper = styled(Box)(({ theme }) => ({
-  width: "100%",
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",

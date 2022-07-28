@@ -11,7 +11,7 @@ function DarkShadow() {
           "linear-gradient(90deg, rgba(0,0,0,0.14049369747899154) 0%, rgba(0,0,0,0.48503151260504207) 36%, rgba(0,0,0,1) 90%)",
         top: 0,
         right: 0,
-        zIndex: 99999,
+        zIndex: 99,
       }}
     />
   );

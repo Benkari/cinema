@@ -19,7 +19,7 @@ function SingleMediumCard({ movie }) {
           position: "absolute",
           top: 0,
           left: 0,
-          zIndex: 999,
+          zIndex: 9,
           padding: 20,
         }}
       >
