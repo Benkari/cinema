@@ -21,7 +21,13 @@ function ProviderButton({ bgColor, iconImage, active }) {
         <IconWrapper
           style={{ backgroundColor: bgColor, width: 50, height: 50 }}
         >
-          <Image src={iconImage} objectFit="contain" width={30} height={30} />
+          <Image
+            src={iconImage}
+            objectFit="contain"
+            width={30}
+            height={30}
+            alt="icon"
+          />
         </IconWrapper>
       </div>
     </ProviderButtonWrapper>

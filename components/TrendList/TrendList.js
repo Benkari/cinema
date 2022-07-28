@@ -6,8 +6,8 @@ function TrendList({ results, trendingListRef }) {
   return (
     <TrendListContainer className="Trend_List" ref={trendingListRef}>
       {results.map((eachMovie, index) => (
-        <div style={{ paddingLeft: index === 0 ? 10 : 0 }}>
-          <SingleLargeCard key={eachMovie.id} movie={eachMovie} />
+        <div key={eachMovie.id} style={{ paddingLeft: index === 0 ? 10 : 0 }}>
+          <SingleLargeCard movie={eachMovie} />
         </div>
       ))}
     </TrendListContainer>

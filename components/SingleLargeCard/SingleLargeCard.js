@@ -15,6 +15,7 @@ function SingleLargeCard({ movie }) {
         layout="fill"
         src={`${BASE_IMG_URL}${movie.backdrop_path || movie.poster_path}`}
         objectFit="cover"
+        alt="largeImg"
       />
       <div
         style={{
@@ -55,6 +56,7 @@ function SingleLargeCard({ movie }) {
                 width={40}
                 height={10}
                 objectFit="contain"
+                alt="imdb"
               />
               <Typography
                 style={{ color: "white", fontSize: 14, fontWeight: 400 }}

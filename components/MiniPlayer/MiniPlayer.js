@@ -18,6 +18,7 @@ function MiniPlayer() {
         src="http://www.tasteofcinema.com/wp-content/uploads/2018/02/La-La-Land-04-1_.jpg"
         layout="fill"
         objectFit="cover"
+        alt="miniplayer"
       />
       <div
         style={{

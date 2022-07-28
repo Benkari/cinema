@@ -25,7 +25,12 @@ function RightBarFilter() {
     <RightBarWrapper>
       <RightBarTopUser>
         <Avatar alt="EliteNoob">
-          <Image src={SteveJobs} objectFit="cover" layout="fill" />
+          <Image
+            src={SteveJobs}
+            objectFit="cover"
+            layout="fill"
+            alt="profile"
+          />
         </Avatar>
         <div style={{ flex: 1 }}>
           <Typography

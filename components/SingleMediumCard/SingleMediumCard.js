@@ -35,6 +35,7 @@ function SingleMediumCard({ movie }) {
         layout="fill"
         src={`${BASE_IMG_URL}${movie.backdrop_path || movie.poster_path}`}
         objectFit="cover"
+        alt="cover"
       />
       <div
         style={{
