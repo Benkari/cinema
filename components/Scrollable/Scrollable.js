@@ -35,8 +35,9 @@ function Scrollable(props) {
           style={{
             width: "100%",
             color: "white",
-            minWidth: 30,
+            minWidth: 40,
             height: "100%",
+            borderRadius: 20,
           }}
           onClick={() => scrollToLeft()}
         >
@@ -51,7 +52,8 @@ function Scrollable(props) {
           style={{
             height: "100%",
             color: "white",
-            minWidth: 30,
+            minWidth: 40,
+            borderRadius: 20,
           }}
           onClick={() => scrollToRight()}
         >

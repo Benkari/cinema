@@ -9,17 +9,18 @@ export const ScrollableWrapper = styled.div`
 
 export const LeftArrow = styled.div`
   position: absolute;
-  height: 100%;
+  height: 40px;
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   opacity: 0;
-  top: 0;
-  left: 0;
+  top: 40%;
+  left: 10px;
   z-index: 99;
   display: flex;
   justifycontent: center;
   align-items: center;
   transition: 0.2s ease-in-out;
+  border-radius: 20px;
 
   &:hover .hoveredIcon {
     font-size: 26px !important;
@@ -28,17 +29,18 @@ export const LeftArrow = styled.div`
 `;
 export const RightArrow = styled.div`
   position: absolute;
-  height: 100%;
+  height: 40px;
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   opacity: 0;
-  top: 0;
-  right: 0;
+  top: 40%;
+  right: 10px;
   z-index: 99;
   display: flex;
   justifycontent: center;
   align-items: center;
   transition: 0.2s ease-in-out;
+  border-radius: 20px;
 
   &:hover .hoveredIcon {
     font-size: 26px !important;
